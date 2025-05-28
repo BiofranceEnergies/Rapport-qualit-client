@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Rapport Qualité Client – Biofrance Énergies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+    h2, h3 { color: #2c3e50; }
+    .bloc { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    select, input[type="text"], input[type="number"] { width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc; }
+    .row { display: flex; justify-content: space-between; gap: 10px; }
+    .row > div { flex: 1; }
+    .intro { background: #e8f0fe; padding: 15px; border-left: 5px solid #4285f4; margin-bottom: 20px; border-radius: 6px; }
+    blockquote { background: #f9f9f9; border-left: 5px solid #ccc; margin: 10px 0; padding: 10px 15px; font-style: italic; }
+    button { padding: 10px 15px; border: none; background-color: #4285f4; color: white; font-size: 16px; border-radius: 5px; cursor: pointer; margin-top: 10px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <button onclick="window.print()">📄 Exporter / Imprimer ce rapport</button>
+
+  <h2>📋 Rapport Qualité Client – Fin d’échange</h2>
+
+  <div class="intro">
+    <p><strong>Pourquoi ce rapport ?</strong></p>
+    <p>Biofrance Énergies nous demande de remplir ensemble ce petit rapport qualité en fin d’entretien. Il nous permet de vérifier que l’étude a bien été comprise, que vous avez eu les réponses à vos questions, et que l’on reste bien alignés sur vos besoins. C’est un outil d’échange transparent, sans engagement.</p>
+  </div>
+
+  <div class="bloc">
+    <h3>1️⃣ Niveau de clarté perçu</h3>
+    <label for="note_clarte">Sur une échelle de 1 à 10, diriez-vous que tout est clair pour vous à ce stade ?</label>
+    <select id="note_clarte" name="note_clarte">
+      <option value="">-- Choisir une note --</option>
+      <option value="1">1 – Très flou</option>
+      <option value="10">10 – Parfaitement clair</option>
+    </select>
+    <p style="font-style: italic; font-size: 0.9em; color: #555;">(Si la note est inférieure à 10, vous pouvez demander : « Qu’est-ce qui ferait passer à un 10 ? »)</p>
+  </div>
+
+  <div class="bloc">
+    <h3>2️⃣ Réaction au tableau d’économies</h3>
+    <label><input type="checkbox"> Oui, j’ai compris comment ça peut faire baisser ma facture</label>
+    <label><input type="checkbox"> Oui, les chiffres me paraissent crédibles</label>
+    <label><input type="checkbox"> Ça fait quand même beaucoup d’économies, j’ai du mal à y croire</label>
+    <label><input type="checkbox"> Est-ce qu’on peut reprendre ensemble le tableau ? J’ai encore besoin de clarifier certains points</label>
+  </div>
+
+  <div class="bloc">
+    <h3>3️⃣ Ce qui pourrait freiner le passage à l’autoproduction</h3>
+    <label><input type="checkbox"> Qu’est-ce qui ferait que vous ne passeriez pas à l’autoproduction aujourd’hui ?</label>
+    <label><input type="checkbox"> Qu’est-ce qu’il vous manquerait pour être vraiment à l’aise avec ce projet ?</label>
+  </div>
+
+  <div class="bloc">
+    <h3>4️⃣ Finalisation – Souhaitez-vous recevoir l’étude ?</h3>
+    <p><strong>Pour que le projet soit rentable, il faut juste qu’il soit pris au sérieux. Et ça, c’est votre décision.</strong></p>
+    <p>Chez Biofrance Énergies, on respecte toujours un délai de réflexion. C’est inscrit dans notre charte qualité : chacun doit pouvoir prendre sa décision tranquillement, avec les bons éléments.</p>
+    <p><strong>Dans la mesure où le projet vous semble rentable grâce aux économies et au transfert de charge :</strong></p>
+    <p>Souhaitez-vous recevoir l’étude personnalisée et le devis complet ?</p>
+    <label><input type="radio"> ✅ Oui, je souhaite les recevoir pour les étudier à tête reposée</label>
+    <label><input type="radio"> ❌ Non, je préfère qu’on en reste là pour l’instant</label>
+
+    <p><strong>Et si oui :</strong> quand puis-je vous rappeler pour connaître votre ressenti ou votre décision ?</p>
+    <label><input type="radio"> ☐ Dans 2–3 jours</label>
+    <label><input type="radio"> ☐ D’ici la fin de semaine</label>
+    <label><input type="radio"> ☐ Une semaine environ</label>
+    <label><input type="radio"> ☐ Je ne sais pas, il faut que je vois – ce n’était pas prévu…</label>
+
+    <label><input type="checkbox"> Je préfère envoyer l’étude uniquement si vous êtes vraiment dans une réflexion sérieuse. Sinon, ce n’est pas grave du tout, je respecte entièrement.</label>
+  </div>
+
+  <button onclick="window.print()">📄 Exporter / Imprimer ce rapport</button>
+</body>
+</html>

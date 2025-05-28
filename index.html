@@ -33,6 +33,14 @@
     <select id="note_clarte" name="note_clarte">
       <option value="">-- Choisir une note --</option>
       <option value="1">1 – Très flou</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
       <option value="10">10 – Parfaitement clair</option>
     </select>
     <p style="font-style: italic; font-size: 0.9em; color: #555;">(Si la note est inférieure à 10, vous pouvez demander : « Qu’est-ce qui ferait passer à un 10 ? »)</p>
@@ -58,8 +66,8 @@
     <p>Chez Biofrance Énergies, on respecte toujours un délai de réflexion. C’est inscrit dans notre charte qualité : chacun doit pouvoir prendre sa décision tranquillement, avec les bons éléments.</p>
     <p><strong>Dans la mesure où le projet vous semble rentable grâce aux économies et au transfert de charge :</strong></p>
     <p>Souhaitez-vous recevoir l’étude personnalisée et le devis complet ?</p>
-    <label><input type="radio"> ✅ Oui, je souhaite les recevoir pour les étudier à tête reposée</label>
-    <label><input type="radio"> ❌ Non, je préfère qu’on en reste là pour l’instant</label>
+    <label><input type="radio" name="envoi" value="oui"> ✅ Oui, je souhaite les recevoir pour les étudier à tête reposée</label>
+    <label><input type="radio" name="envoi" value="non"> ❌ Non, je préfère qu’on en reste là pour l’instant</label>
 
     <p><strong>Et si oui :</strong> quand puis-je vous rappeler pour connaître votre ressenti ou votre décision ?</p>
     <label><input type="radio"> ☐ Dans 2–3 jours</label>
